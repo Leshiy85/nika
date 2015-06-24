@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150623095016) do
+ActiveRecord::Schema.define(:version => 20150624091217) do
 
   create_table "refinery_events", :force => true do |t|
     t.string   "title"
@@ -88,6 +88,8 @@ ActiveRecord::Schema.define(:version => 20150623095016) do
     t.string   "layout_template"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.integer  "background_image_id"
+    t.boolean  "show_in_footer",      :default => false
   end
 
   add_index "refinery_pages", ["depth"], :name => "index_refinery_pages_on_depth"

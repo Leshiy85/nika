@@ -22,9 +22,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
-
+  gem 'jquery-rails'
+  gem 'globalize3', '~> 0.3.0'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -32,7 +31,10 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+  gem 'unicorn'
+
+# bootsrap
+  gem 'twitter-bootstrap-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -41,13 +43,13 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.1.0'
+  gem 'refinerycms', '~> 2.1.0'
 
 # Optionally, specify additional Refinery CMS Extensions here:
-gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
+  gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 # gem 'refinerycms-blog', '~> 2.1.0'
 # gem 'refinerycms-inquiries', '~> 2.1.0'
 # gem 'refinerycms-search', '~> 2.1.0'
 # gem 'refinerycms-page-images', '~> 2.1.0'
 
-gem 'refinerycms-events', :path => 'vendor/extensions'
+  gem 'refinerycms-events', :path => 'vendor/extensions'

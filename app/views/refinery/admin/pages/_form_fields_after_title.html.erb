@@ -1,0 +1,10 @@
+<%# Intentionally empty, useful override point to add extra fields. %>
+<% content_for :stylesheets do %>
+    <% if @page.background_image.present? %>
+        <style type="text/css">
+            body {
+                background-image: url(<%= @page.background_image.url -%>);
+            }
+        </style>
+    <% end %>
+<% end %>

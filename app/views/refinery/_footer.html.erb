@@ -1,4 +1,11 @@
 <p>
   <%= t('.copyright', :year => Time.now.year,
                       :site_name => Refinery::Core.site_name) %>
+
+<div class="footer_menu" id="footer_menu">
+  <ul>
+      <%= footer_menu.to_html %>
+  </ul>
+</div>
 </p>
+
